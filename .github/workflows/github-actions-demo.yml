@@ -24,8 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - run : "echo:Sparkles: this run was triggered by : ${{guthub.event_name}}"
-      - run : "echo:Sunglasses: The name of the current branch is : ${{guthub.ref}}"
+      - run : "echo:Sparkles: this run was triggered by : ${{github.event_name}}"
+      - run : "echo:Sunglasses: The name of the current branch is : ${{github.ref}}"
       
       - uses : actions/checkout@v3.5.3
       
